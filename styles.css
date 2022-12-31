@@ -201,12 +201,14 @@ h1 {
 
     /*centre search box*/
   .search-box {
+    margin-bottom: 10px; /* add some margin at the bottom */
     display: flex;
     justify-content: center;
   }
 
   /*centre filter buttons*/
   .filter-box {
+    margin-top: 10px; /* add some margin at the top */
     display: flex;
     justify-content: center;
   }
