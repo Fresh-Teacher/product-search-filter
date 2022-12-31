@@ -121,3 +121,30 @@ hammer.on('swipe', function(event) {
   // Toggle the display of the navigation drawer based on its current display value
   navDrawer.style.display = (navDrawer.style.display === "block") ? "none" : "block";
 });
+
+// Get the navigation drawer element
+var navDrawer = document.getElementById("nav-drawer");
+
+// Initialize variables to track the start and end positions of the swipe
+var startX = 0;
+var endX = 0;
+
+// Add a touchstart event listener to the navigation drawer element
+navDrawer.addEventListener("touchstart", function(event) {
+  // Get the starting position of the touch
+  startX = event.touches[0].clientX;
+});
+
+// Add a touchend event listener to the navigation drawer element
+navDrawer.addEventListener("touchend", function(event) {
+  // Get the ending position of the touch
+  endX = event.changedTouches[0].clientX;
+
+  // Calculate the distance swiped
+  var distance = startX - endX;
+
+  // If the distance swiped is greater than 50 pixels, close the navigation drawer
+  if (Math.abs(distance) > 50) {
+    navDrawer.style.display = "none";
+  }
+});
