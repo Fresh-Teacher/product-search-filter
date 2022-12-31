@@ -219,6 +219,7 @@ h1 {
   }
   
   .filter-box a {
+    margin: 0 10px;
     /* add padding as needed */
   }
  
