@@ -229,10 +229,23 @@ h1 {
     top: 0;
     width: 100%; /* Add this line to make the header take up the full width when it is fixed */
  }
+ /* Style the WhatsApp message icon */
+ #whatsapp-icon {
+    position: fixed; /* Set the icon to fixed position */
+    bottom: 50; /* Align the icon to the bottom of the page */
+    right: 20px; /* Add some padding to the right side */
+    z-index: 1; /* Make sure the icon is displayed on top of other elements */
+    padding-bottom: 20px;
+  }
 
- 
- 
- 
- 
- 
- 
+  #whatsapp-icon i {
+    font-size: 50px; /* Set the size of the icon */
+    color: #25D366; /* Set the color of the icon */
+  }
+
+  #whatsapp-icon {
+position: fixed; /* Set the icon to fixed position */
+bottom: 50px; /* Align the icon 50 pixels above the bottom of the page */
+right: 20px; /* Add some padding to the right side */
+z-index: 1; /* Make sure the icon is displayed on top of other elements */
+}

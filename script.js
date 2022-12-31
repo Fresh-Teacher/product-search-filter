@@ -149,10 +149,4 @@ navDrawer.addEventListener("touchend", function(event) {
   }
 });
 
-document.addEventListener("touchstart", function(event) {
-   // Check if the clicked element is the navigation drawer or one of its children
-   if (!event.target.closest("#nav-drawer") && navDrawer.style.display === "block") {
-     // If it's not, hide the navigation drawer
-     navDrawer.style.display = "none";
-   }
- });
+
