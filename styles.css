@@ -25,7 +25,6 @@ html {
 }
 
 body {
-    padding-right: 20px;
     font-family: "Open Sans", sans-serif;
 }
 
@@ -38,11 +37,11 @@ img {
     /* width: 100%; */
 }
 
-/* .container {
+.container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-} */
+}
 
 /* Start Here */
 /* Hide the navigation drawer by default */
@@ -85,9 +84,6 @@ img {
 header {
     background-color: var(--grey);
     padding: 1rem;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
 header h1 {
@@ -253,6 +249,7 @@ bottom: 50px; /* Align the icon 50 pixels above the bottom of the page */
 right: 20px; /* Add some padding to the right side */
 z-index: 1; /* Make sure the icon is displayed on top of other elements */
 }
+
 /* Style for selected buttons */
 #navbar a.selected {
     background-color: #333;
