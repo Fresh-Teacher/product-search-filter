@@ -258,6 +258,9 @@ z-index: 1; /* Make sure the icon is displayed on top of other elements */
     cursor: pointer;
     color: #000; /* set the color of the icon */
     position: fixed;
+    margin-right: 1rem;
+    padding-left: 60px; /* Add padding on the bottom of the refresh button */
+
   }
   
   #refresh-button i {
@@ -318,9 +321,9 @@ z-index: 1; /* Make sure the icon is displayed on top of other elements */
       header {
         display: flex;
         align-items: center;
-        justify-content: center;
-        padding: 1rem;
-      }
+        justify-content: space-between;
+        padding: 0.5rem 1rem;
+    }
       
       header h1 {
         text-align: center;
