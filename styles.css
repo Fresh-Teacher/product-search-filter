@@ -38,11 +38,11 @@ img {
     /* width: 100%; */
 }
 
-.container {
+/* .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-}
+} */
 
 /* Start Here */
 /* Hide the navigation drawer by default */
@@ -85,6 +85,9 @@ img {
 header {
     background-color: var(--grey);
     padding: 1rem;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 header h1 {
