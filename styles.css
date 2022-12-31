@@ -25,6 +25,7 @@ html {
 }
 
 body {
+    padding-right: 20px;
     font-family: "Open Sans", sans-serif;
 }
 
@@ -249,3 +250,5 @@ bottom: 50px; /* Align the icon 50 pixels above the bottom of the page */
 right: 20px; /* Add some padding to the right side */
 z-index: 1; /* Make sure the icon is displayed on top of other elements */
 }
+
+ 
