@@ -110,4 +110,14 @@ window.addEventListener('scroll', function() {
     }
  });
  
- 
+ // Get the navigation drawer element
+var navDrawer = document.getElementById("nav-drawer");
+
+// Create a new Hammer instance for the navigation drawer element
+var hammer = new Hammer(navDrawer);
+
+// Add a swipe event listener to the Hammer instance
+hammer.on('swipe', function(event) {
+  // Toggle the display of the navigation drawer based on its current display value
+  navDrawer.style.display = (navDrawer.style.display === "block") ? "none" : "block";
+});

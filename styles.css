@@ -230,11 +230,6 @@ h1 {
     width: 100%; /* Add this line to make the header take up the full width when it is fixed */
  }
 
- nav {
-    display: none; /* Hide the navigation links by default */
-    margin-top: 5em; /* Add some margin to the top of the links */
- }
-
  
  
  
