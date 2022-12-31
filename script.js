@@ -186,15 +186,5 @@ navDrawer.addEventListener("touchend", function(event) {
          }
        });
  
-       //rotate refresh buttons
-       const refreshButton = document.getElementById("refresh-button");
-refreshButton.addEventListener("click", function() {
-  window.location.reload();
-});
-
-//return on top of page if refresh
-window.onbeforeunload = function () {
-   window.scrollTo(0, 0); // Scroll to the top of the page
- }
- 
+     
 
