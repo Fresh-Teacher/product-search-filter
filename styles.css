@@ -56,7 +56,7 @@ img {
     left: 0;
     bottom: 0;
     width: 250px;
-    background-color: #fafafa;
+    background-color: #333;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
   
@@ -89,6 +89,7 @@ header {
 header h1 {
     font-size: 2.5rem;
     line-height: 2;
+    text-align: center;
     color: var(--color-primary);
 }
 
@@ -100,7 +101,6 @@ form input {
     outline: none;
     font-size: 1rem;
     border-bottom: 2px solid var(--color-sec);
-    margin-bottom: 1rem;
 }
 
 .btn {
@@ -289,6 +289,39 @@ z-index: 1; /* Make sure the icon is displayed on top of other elements */
         color: blue;
       }
 
+      header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+      }
+      
+      header h1 {
+        text-align: center;
+        font-size: 2.5rem;
+        line-height: 2;
+        color: var(--color-primary);
+      }
+
+      #nav-drawer-trigger {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        z-index: 1;
+        display: inline-block;
+        padding: 10px;
+        color: #333;
+        cursor: pointer;
+        border: none; /* remove the rectangular border */
+        transform: scale(1.5); /* Increase the size of the hamburger menu icon */
+
+      }
+
+      #nav-drawer-trigger {
+        background-color: transparent;
+      }
+      
+      
       
 
  
