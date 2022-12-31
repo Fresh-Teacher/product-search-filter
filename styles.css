@@ -252,6 +252,30 @@ right: 20px; /* Add some padding to the right side */
 z-index: 1; /* Make sure the icon is displayed on top of other elements */
 }
 
+#refresh-button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: #000; /* set the color of the icon */
+    position: fixed;
+  }
+  
+  #refresh-button i {
+    transform: rotate(0deg); /* set the initial rotation of the icon */
+    transition: transform 0.9s ease; /* add a transition to the rotation */
+  }
+
+  #refresh-button.rotating i {
+    transform: rotate(360deg);
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  #refresh-button:hover i {
+    transform: rotate(360deg); /* rotate the icon when hovering */
+  }
+  
+
 /* Style for selected buttons */
 #navbar a.selected {
     background-color: #333;
