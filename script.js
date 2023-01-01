@@ -193,6 +193,22 @@ refreshButton.addEventListener("click", function() {
   window.location.reload();
 });
 
-//hide search items
+//hide navigation bar
+function hideNav() {
+  document.querySelector('#nav-drawer').classList.add('hidden');
+}
+
+//remove hidden navigation drawer
+function showNav() {
+  document.querySelector('#nav-drawer').classList.remove('hidden');
+}
+
+//hide nav bar while typing
+function hideNav() {
+  document.querySelector('#nav-drawer').classList.add('hidden');
+  window.scroll(0, window.scrollY - document.querySelector('#nav-drawer').offsetHeight);
+}
+
+
 
 
