@@ -203,12 +203,23 @@ function showNav() {
   document.querySelector('#nav-drawer').classList.remove('hidden');
 }
 
-//hide nav bar while typing
-function hideNav() {
-  document.querySelector('#nav-drawer').classList.add('hidden');
-  window.scroll(0, window.scrollY - document.querySelector('#nav-drawer').offsetHeight);
+// Hide the navigation bar
+function filterProducts(e) {
+  const text = e.target.value.toLowerCase();
+
+  productName.forEach((product) => {
+    const item = product.textContent;
+
+    if (text === '') {
+      product.parentElement.parentElement.classList.add('hidden');
+      noResult.style.display = "none";
+    } else if (item.toLowerCase().indexOf(text) != -1) {
+      product.parentElement.parentElement.classList.remove('hidden');
+      noResult.style.display = "none";
+    } else {
+      product.parentElement.parentElement.classList.add('hidden');
+      noResult.style.display = "block";
+    }
+  });
 }
-
-
-
 
