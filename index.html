@@ -38,12 +38,14 @@
 
    <header style="width: 100%; max-width: 1200px; margin: 0 auto;">
       <div class="container">
-        
+         <button id="refresh-button">
+             <centre>Fresh App</centre>
+          </button>
          <!-- Search Box -->
          <div class="search-box">
             <form action="" onsubmit="return false"><br>
-               <input type="text" id="search" placeholder="Search for files here..." />
-            </form>
+               <input type="text" id="search" placeholder="Search for files here..." oninput="search(event)" />
+                </form>
          </div>
 
          <div class="filter-box" id="search-filter">
@@ -57,8 +59,8 @@
    <main>
       <div class="main-container">
          <section class="container" id="store-products">
-             <!-- Single product - exams -->
-            <div class="store-product exams">
+               <!-- Single product - exams -->
+            <div class="store-product exams hidden">
                <a href="NURSERY ART AND CRAFT TERM 2.pdf"> </a>
                <div class="product-details">
                   <h2>NURSERY ART AND CRAFT TERM
@@ -68,79 +70,7 @@
                </div>
             </div>
              <!-- Single product - exams -->
-             <div class="store-product exams">
-               <a href="NURSERY ART AND CRAFT TERM 2.pdf"> </a>
-               <div class="product-details">
-                  <h2>NURSERY ART AND CRAFT TERM
-                     2</h2>
-                  <p> Schemes of Work</p>
-                  <a href="NURSERY ART AND CRAFT TERM 2.pdf" download> View File</a>
-               </div>
-            </div> <!-- Single product - exams -->
-            <div class="store-product exams">
-               <a href="NURSERY ART AND CRAFT TERM 2.pdf"> </a>
-               <div class="product-details">
-                  <h2>NURSERY ART AND CRAFT TERM
-                     2</h2>
-                  <p> Schemes of Work</p>
-                  <a href="NURSERY ART AND CRAFT TERM 2.pdf" download> View File</a>
-               </div>
-            </div> <!-- Single product - exams -->
-            <div class="store-product exams">
-               <a href="NURSERY ART AND CRAFT TERM 2.pdf"> </a>
-               <div class="product-details">
-                  <h2>NURSERY ART AND CRAFT TERM
-                     2</h2>
-                  <p> Schemes of Work</p>
-                  <a href="NURSERY ART AND CRAFT TERM 2.pdf" download> View File</a>
-               </div>
-            </div> <!-- Single product - exams -->
-            <div class="store-product exams">
-               <a href="NURSERY ART AND CRAFT TERM 2.pdf"> </a>
-               <div class="product-details">
-                  <h2>NURSERY ART AND CRAFT TERM
-                     2</h2>
-                  <p> Schemes of Work</p>
-                  <a href="NURSERY ART AND CRAFT TERM 2.pdf" download> View File</a>
-               </div>
-            </div> <!-- Single product - exams -->
-            <div class="store-product exams">
-               <a href="NURSERY ART AND CRAFT TERM 2.pdf"> </a>
-               <div class="product-details">
-                  <h2>NURSERY ART AND CRAFT TERM
-                     2</h2>
-                  <p> Schemes of Work</p>
-                  <a href="NURSERY ART AND CRAFT TERM 2.pdf" download> View File</a>
-               </div>
-            </div> <!-- Single product - exams -->
-            <div class="store-product exams">
-               <a href="NURSERY ART AND CRAFT TERM 2.pdf"> </a>
-               <div class="product-details">
-                  <h2>NURSERY ART AND CRAFT TERM
-                     2</h2>
-                  <p> Schemes of Work</p>
-                  <a href="NURSERY ART AND CRAFT TERM 2.pdf" download> View File</a>
-               </div>
-            </div> <!-- Single product - exams -->
-            <div class="store-product exams">
-               <a href="NURSERY ART AND CRAFT TERM 2.pdf"> </a>
-               <div class="product-details">
-                  <h2>NURSERY ART AND CRAFT TERM
-                     2</h2>
-                  <p> Schemes of Work</p>
-                  <a href="NURSERY ART AND CRAFT TERM 2.pdf" download> View File</a>
-               </div>
-            </div> <!-- Single product - exams -->
-            <div class="store-product exams">
-               <a href="NURSERY ART AND CRAFT TERM 2.pdf"> </a>
-               <div class="product-details">
-                  <h2>NURSERY ART AND CRAFT TERM
-                     2</h2>
-                  <p> Schemes of Work</p>
-                  <a href="NURSERY ART AND CRAFT TERM 2.pdf" download> View File</a>
-               </div>
-            </div> <!-- Single product - exams -->
-            <div class="store-product exams">
+             <div class="store-product exams hidden">
                <a href="NURSERY ART AND CRAFT TERM 2.pdf"> </a>
                <div class="product-details">
                   <h2>NURSERY ART AND CRAFT TERM
@@ -149,8 +79,89 @@
                   <a href="NURSERY ART AND CRAFT TERM 2.pdf" download> View File</a>
                </div>
             </div>
+             <!-- Single product - exams -->
+             <div class="store-product exams hidden">
+               <a href="NURSERY ART AND CRAFT TERM 2.pdf"> </a>
+               <div class="product-details">
+                  <h2>NURSERY ART AND CRAFT TERM
+                     2</h2>
+                  <p> Schemes of Work</p>
+                  <a href="NURSERY ART AND CRAFT TERM 2.pdf" download> View File</a>
+               </div>
+            </div>
+             <!-- Single product - exams -->
+             <div class="store-product exams hidden">
+               <a href="NURSERY ART AND CRAFT TERM 2.pdf"> </a>
+               <div class="product-details">
+                  <h2>NURSERY ART AND CRAFT TERM
+                     2</h2>
+                  <p> Schemes of Work</p>
+                  <a href="NURSERY ART AND CRAFT TERM 2.pdf" download> View File</a>
+               </div>
+            </div>
+             <!-- Single product - exams -->
+             <div class="store-product exams hidden">
+               <a href="NURSERY ART AND CRAFT TERM 2.pdf"> </a>
+               <div class="product-details">
+                  <h2>NURSERY ART AND CRAFT TERM
+                     2</h2>
+                  <p> Schemes of Work</p>
+                  <a href="NURSERY ART AND CRAFT TERM 2.pdf" download> View File</a>
+               </div>
+            </div>
+             <!-- Single product - exams -->
+             <div class="store-product exams hidden">
+               <a href="NURSERY ART AND CRAFT TERM 2.pdf"> </a>
+               <div class="product-details">
+                  <h2>NURSERY ART AND CRAFT TERM
+                     2</h2>
+                  <p> Schemes of Work</p>
+                  <a href="NURSERY ART AND CRAFT TERM 2.pdf" download> View File</a>
+               </div>
+            </div>
+             <!-- Single product - exams -->
+             <div class="store-product exams hidden">
+               <a href="NURSERY ART AND CRAFT TERM 2.pdf"> </a>
+               <div class="product-details">
+                  <h2>NURSERY ART AND CRAFT TERM
+                     2</h2>
+                  <p> Schemes of Work</p>
+                  <a href="NURSERY ART AND CRAFT TERM 2.pdf" download> View File</a>
+               </div>
+            </div>
+             <!-- Single product - exams -->
+             <div class="store-product exams hidden">
+               <a href="NURSERY ART AND CRAFT TERM 2.pdf"> </a>
+               <div class="product-details">
+                  <h2>NURSERY ART AND CRAFT TERM
+                     2</h2>
+                  <p> Schemes of Work</p>
+                  <a href="NURSERY ART AND CRAFT TERM 2.pdf" download> View File</a>
+               </div>
+            </div>
+             <!-- Single product - exams -->
+             <div class="store-product exams hidden">
+               <a href="NURSERY ART AND CRAFT TERM 2.pdf"> </a>
+               <div class="product-details">
+                  <h2>NURSERY ART AND CRAFT TERM
+                     2</h2>
+                  <p> Schemes of Work</p>
+                  <a href="NURSERY ART AND CRAFT TERM 2.pdf" download> View File</a>
+               </div>
+            </div>
+             <!-- Single product - exams -->
+             <div class="store-product exams hidden">
+               <a href="NURSERY ART AND CRAFT TERM 2.pdf"> </a>
+               <div class="product-details">
+                  <h2>NURSERY ART AND CRAFT TERM
+                     2</h2>
+                  <p> Schemes of Work</p>
+                  <a href="NURSERY ART AND CRAFT TERM 2.pdf" download> View File</a>
+               </div>
+            </div>
+            
             <!-- Single product - exams -->
-            <div class="store-product exams">
+            <div class="store-product exams hidden">
                <a href="NURSERY ART AND CRAFT TERM 2.pdf"> </a>
                <div class="product-details">
                   <h2>NURSERY ART AND CRAFT TERM
@@ -158,7 +169,8 @@
                   <p> Schemes of Work</p>
                   <a href="NURSERY ART AND CRAFT TERM 2.pdf" download> View File</a>
                </div>
-            </div><br><br>
+            </div>
+             <br><br>
              
          </section>
          <div class="container no-result">

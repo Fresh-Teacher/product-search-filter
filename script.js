@@ -186,5 +186,13 @@ navDrawer.addEventListener("touchend", function(event) {
          }
        });
  
-     
+       //rotate refresh buttons
+       const refreshButton = document.getElementById("refresh-button");
+
+refreshButton.addEventListener("click", function() {
+  window.location.reload();
+});
+
+//hide search items
+
 
