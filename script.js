@@ -203,15 +203,15 @@ function showNav() {
   document.querySelector('#nav-drawer').classList.remove('hidden');
 }
 
-// Hide the navigation bar
+// Hide the product items
 function filterProducts(e) {
   const text = e.target.value.toLowerCase();
 
   productName.forEach((product) => {
-    const item = product.textContent;
+    const item = product.textContent + product.nextSibling.textContent;
 
     if (text === '') {
-      product.parentElement.parentElement.classList.add('hidden');
+      product.parentElement.parentElement.classList.remove('hidden');
       noResult.style.display = "none";
     } else if (item.toLowerCase().indexOf(text) != -1) {
       product.parentElement.parentElement.classList.remove('hidden');
@@ -222,4 +222,3 @@ function filterProducts(e) {
     }
   });
 }
-
