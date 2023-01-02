@@ -199,26 +199,29 @@ function hideNav() {
 }
 
 //remove hidden navigation drawer
-function showNav() {
-  document.querySelector('#nav-drawer').classList.remove('hidden');
-}
-
-// Hide the product items
 function filterProducts(e) {
-  const text = e.target.value.toLowerCase();
-
-  productName.forEach((product) => {
-    const item = product.textContent + product.nextSibling.textContent;
-
-    if (text === '') {
-      product.parentElement.parentElement.classList.remove('hidden');
+  const text = e.target.value.toLowerCase().trim(); // Trim whitespace from both ends of the string
+  if (text === "") {
+      // If the search text is an empty string, display the welcome message
+      document.getElementById("welcome-message").style.display = "block";
+      storeProducts.forEach((product) => {
+          product.style.display = "none";
+      });
       noResult.style.display = "none";
-    } else if (item.toLowerCase().indexOf(text) != -1) {
-      product.parentElement.parentElement.classList.remove('hidden');
-      noResult.style.display = "none";
-    } else {
-      product.parentElement.parentElement.classList.add('hidden');
-      noResult.style.display = "block";
-    }
-  });
+  } else {
+      // Otherwise, hide the welcome message and display products based on the search text
+      document.getElementById("welcome-message").style.display = "none";
+      productName.forEach((product) => {
+          const item = product.textContent;
+          if (item.toLowerCase().indexOf(text) != -1) {
+              product.parentElement.parentElement.style.display = "block";
+              noResult.style.display = "none";
+          } else {
+              product.parentElement.parentElement.style.display = "none";
+              noResult.style.display = "block";
+          }
+      });
+  }
 }
+
+
