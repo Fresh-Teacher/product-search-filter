@@ -350,10 +350,33 @@ z-index: 1; /* Make sure the icon is displayed on top of other elements */
       #nav-drawer-trigger {
         background-color: transparent;
       }
+
 /*hide items*/
       .hidden {
         display: none;
       }
+
+      .welcome-message p {
+    position: fixed; /* Set the icon to fixed position */
+    right: 51px; /* Add some padding to the right side */
+    left: 50px; /* Add some padding to the right side */
+      }
+
+      .main-container p {
+        padding: 10px;
+      }      
+
+      #main-container {
+        height: 400px;
+        overflow-y: scroll;
+        overflow-x: scroll;
+
+      }
+      
+      
+
+
+
 
     
       
