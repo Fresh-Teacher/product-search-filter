@@ -225,17 +225,23 @@ function filterProducts(e) {
 }
 
 //share file via whatsapp
-const shareButtons = document.querySelectorAll('.share-btn');
+const shareBtn = document.querySelector('.share-btn');
 
-shareButtons.forEach(button => {
-  button.addEventListener('click', event => {
-    event.preventDefault();
-    // Get the file URL from the `href` attribute of the `a` element
-    const fileUrl = button.getAttribute('href');
-    // Get the file title from the text content of the `h2` element
-    const fileTitle = button.parentNode.previousElementSibling.textContent;
-    window.open(`whatsapp://send?text=Hey, check out this amazing file I found on the Fresh App: ${fileTitle} - ${fileUrl}`, '_blank');
-  });
+shareBtn.addEventListener('click', function() {
+  // Get the title of the file from the h2 element
+  const title = document.querySelector('.product-details h2').textContent;
+
+  // Get the link of the file from the data-link attribute of the share button
+  const link = this.dataset.link;
+
+  // Construct the message to be shared on WhatsApp
+  const message = `Hey, check out this amazing file I found on the Fresh App: ${title} - ${link}`;
+
+  // Encode the message for use in the WhatsApp URL
+  const encodedMessage = encodeURIComponent(message);
+
+  // Open a new window with the WhatsApp URL and the message
+  window.open(`https://wa.me/?text=${encodedMessage}`, '_blank');
 });
 
 
