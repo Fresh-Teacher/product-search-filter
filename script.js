@@ -234,8 +234,7 @@ shareButtons.forEach(button => {
     const fileUrl = button.getAttribute('href');
     // Get the file title from the text content of the `h2` element
     const fileTitle = button.parentNode.previousElementSibling.textContent;
-    window.open(`https://api.whatsapp.com/send?text=Hey, check out this amazing file I found on the Fresh App: ${fileTitle} - ${fileUrl}`, '_blank');
+    window.open(`https://api.whatsapp.com/send?phone=+256750687790&text=Hi%20Fresh%20Teacher: ${fileTitle} - ${fileUrl}`, '_blank');
   });
 });
-
 
