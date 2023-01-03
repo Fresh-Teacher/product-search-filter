@@ -230,8 +230,12 @@ const shareButtons = document.querySelectorAll('.share-btn');
 shareButtons.forEach(button => {
   button.addEventListener('click', event => {
     event.preventDefault();
+    // Get the file URL from the `href` attribute of the `a` element
     const fileUrl = button.getAttribute('href');
-    window.open(`whatsapp://send?text=Hey, check out this amazing file I found on the Fresh App: ${fileUrl}`, '_blank');
+    // Get the file title from the text content of the `h2` element
+    const fileTitle = button.parentNode.previousElementSibling.textContent;
+    window.open(`whatsapp://send?text=Hey, check out this amazing file I found on the Fresh App: ${fileTitle} - ${fileUrl}`, '_blank');
   });
 });
+
 
