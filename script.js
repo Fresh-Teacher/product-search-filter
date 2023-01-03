@@ -230,7 +230,7 @@ const shareButtons = document.querySelectorAll('.share-btn');
 shareButtons.forEach(button => {
   button.addEventListener('click', event => {
     event.preventDefault();
-    const fileUrl = button.parentNode.previousElementSibling.getAttribute('href');
+    const fileUrl = button.getAttribute('href');
     window.open(`whatsapp://send?text=Hey, check out this amazing file I found on the Fresh App: ${fileUrl}`, '_blank');
   });
 });
