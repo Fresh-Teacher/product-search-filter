@@ -372,6 +372,24 @@ z-index: 1; /* Make sure the icon is displayed on top of other elements */
 
       }
       
+      /*add share button*/
+      .share-btn {
+        display: inline-block;
+        background-color: #9d0191; /* or any other color you want */
+        color: #fff;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      
+      .share-btn i {
+        margin-right: 0.5rem;
+      }
+
+      .share-btn-container {
+        padding-top:210px;
+      }
+      
       
 
 
