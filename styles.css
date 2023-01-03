@@ -365,12 +365,12 @@ z-index: 1; /* Make sure the icon is displayed on top of other elements */
         padding: 10px;
       }      
 
-      #main-container {
+      /* #main-container {
         height: 400px;
         overflow-y: scroll;
         overflow-x: scroll;
 
-      }
+      } */
       
       /*add share button*/
       .share-btn {
